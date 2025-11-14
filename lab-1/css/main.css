@@ -1,0 +1,99 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(13deg, #18699b, #0b324e);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: aquamarine;
+}
+.uwaga1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  color: aquamarine;
+  text-shadow: 0 0 8px black;
+  padding-right: 100px;
+}
+.tytul {
+  padding-right: 100px;
+}
+.box {
+  background: rgba(148, 37, 37, 0.16);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  width: 350px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: 3px solid rgba(104, 70, 70, 0.6);
+}
+button {
+  width: 100%;
+  padding: 12px;
+  border: 2px dashed black;
+  background: #004f99;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 15px;
+  cursor: pointer;
+}
+button:hover {
+  background: #021c36;
+  border: 2px dashed white;
+  color: aquamarine;
+}
+.tytul {
+  font-size: 42px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #000;
+}
+nav {
+  background: rgba(148, 37, 37, 0.16);
+  backdrop-filter: blur(8px);
+  padding: 25px 35px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 280px;
+  box-sizing: border-box;
+}
+nav a {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  background: #004f99;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 2px dashed black;
+  transition: 0.2s;
+}
+nav a:hover {
+  background: #021c36;
+  border: 2px dashed white;
+  color: aquamarine;
+}
