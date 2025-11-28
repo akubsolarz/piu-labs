@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.theme-picker {
+  background: #f4f5dc;
+  border: 2px solid #fe7f00;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+
+  background: #f4f5dc;
+  border: 2px solid #fe7f00;
+  border-radius: 8px;
+
+  justify-content: space-between;
+}
+
+.item {
+  background: #065991;
+  color: white;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  text-align: center;
+
+  flex: 0 1 30%;
+}
+
+@media (max-width: 1024px) {
+  .item {
+    flex: 0 1 50%;
+  }
+}
+
+body:has(input[value='red']:checked) .item {
+  background: #d41a05;
+  color: white;
+  flex: 1 1 0;
+}
+
+@media (max-width: 1024px) {
+  body:has(input[value='red']:checked) .item {
+    flex: 0 1 calc(50% - 0.6rem);
+  }
+}
+
+body:has(input[value='red']:checked) .item:nth-child(1) {
+  order: 3;
+  flex: 2 1 0;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  body:has(input[value='red']:checked) .item:nth-child(1) {
+    flex: 0 1 100%;
+  }
+}
+
+body:has(input[value='red']:checked) .item:nth-child(2) {
+  order: 1;
+}
+body:has(input[value='red']:checked) .item:nth-child(3) {
+  order: 2;
+}
+body:has(input[value='red']:checked) .item:nth-child(4) {
+  order: 4;
+}
+body:has(input[value='red']:checked) .item:nth-child(5) {
+  order: 5;
+}
+
+body:has(input[value='red']:checked) .item:nth-child(1)::after {
+  content: '(Jestem większy i na środku!)';
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+body:has(input[value='green']:checked) .item {
+  background: #079643;
+  color: black;
+}
+
+body:has(input[value='green']:checked) .item:nth-child(1) {
+  flex-grow: 5;
+}
+body:has(input[value='green']:checked) .item:nth-child(2) {
+  flex-grow: 4;
+}
+body:has(input[value='green']:checked) .item:nth-child(3) {
+  flex-grow: 3;
+}
+body:has(input[value='green']:checked) .item:nth-child(4) {
+  flex-grow: 2;
+}
+body:has(input[value='green']:checked) .item:nth-child(5) {
+  flex-grow: 1;
+}
+
+body:has(input[value='green']:checked) .item:nth-child(1)::before,
+body:has(input[value='green']:checked) .item:nth-child(1)::after {
+  content: '😀';
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+
+body:has(input[value='green']:checked) .item:nth-child(1) {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  body:has(input[value='green']:checked) .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  body:has(input[value='green']:checked) .item:nth-child(1) {
+    order: 5;
+    width: 90%;
+  }
+
+  body:has(input[value='green']:checked) .item:nth-child(2) {
+    order: 4;
+    width: 75%;
+  }
+
+  body:has(input[value='green']:checked) .item:nth-child(3) {
+    order: 3;
+    width: 60%;
+  }
+
+  body:has(input[value='green']:checked) .item:nth-child(4) {
+    order: 2;
+    width: 45%;
+  }
+
+  body:has(input[value='green']:checked) .item:nth-child(5) {
+    order: 1;
+    width: 30%;
+  }
+}
