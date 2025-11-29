@@ -1,0 +1,144 @@
+.product-card {
+  --polo-img: url('../img/polo_b.png');
+  --polo-color: #1e76d1;
+  --polo-color-accent: #0f3e78;
+  --image-size: min(500px, 90vw);
+}
+.product-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  width: min(1000px, 100%);
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.product-image {
+  width: var(--image-size);
+  aspect-ratio: 1;
+  background-image: var(--polo-img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid var(--polo-color);
+  border-radius: 12px;
+}
+.product-info {
+  width: 300px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.badge {
+  background: var(--polo-color);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.description {
+  font-size: 0.9rem;
+  color: #444;
+}
+.option-block label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.color-selector {
+  display: flex;
+  gap: 0.6rem;
+}
+.color-selector input {
+  display: none;
+}
+.color-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid white;
+  outline: 2px solid #bbb;
+  cursor: pointer;
+}
+.blue {
+  background: #1e76d1;
+}
+.red {
+  background: #d11e1e;
+}
+.green {
+  background: #148f28;
+}
+.yellow {
+  background: #e4ad09;
+}
+.product-card:has(#blue_polo:checked) {
+  --polo-img: url('../img/polo_b.png');
+  --polo-color: #1e76d1;
+  --polo-color-accent: #0f3e78;
+}
+.product-card:has(#red_polo:checked) {
+  --polo-img: url('../img/polo_r.png');
+  --polo-color: #d11e1e;
+  --polo-color-accent: #9b1111;
+}
+.product-card:has(#green_polo:checked) {
+  --polo-img: url('../img/polo_g.png');
+  --polo-color: #148f28;
+  --polo-color-accent: #0c631b;
+}
+.product-card:has(#yellow_polo:checked) {
+  --polo-img: url('../img/polo_y.png');
+  --polo-color: #e4ad09;
+  --polo-color-accent: #b98905;
+}
+.size-list {
+  display: flex;
+  gap: 0.6rem;
+}
+.size-btn {
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid #333;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+.size-btn.selected {
+  background: var(--polo-color);
+  color: white;
+  border-color: var(--polo-color);
+}
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+.btn {
+  background: var(--polo-color);
+  border: none;
+  padding: 0.8rem 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--polo-color-accent);
+}
