@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+    <link rel="stylesheet" href="css/galeria.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1 class="title">responsywna galeria</h1>
+      <p class="intro">
+        zdjęcia w dwóch rozmiarach (500px i 1000px) .jpg, ładowane w zależności
+        od szerokości okna.
+      </p>
+      <section class="gallery">
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/bociany_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/bociany_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/bociany_1000.jpg" />
+            <img src="img/bociany_500.jpg" alt="Zdjęcie 1 - bociany" />
+          </picture>
+          <figcaption>Grupa bocianów</figcaption>
+        </figure>
+
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/jezyk_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/jezyk_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/jezyk_1000.jpg" />
+            <img src="img/jezyk_500.jpg" alt="Zdjęcie 2 - jezyk" />
+          </picture>
+          <figcaption>Jeżyk jesienią</figcaption>
+        </figure>
+
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/kurczaki_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/kurczaki_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/kurczaki_1000.jpg" />
+            <img src="img/kurczaki_500.jpg" alt="Zdjęcie 3 - kurczaki" />
+          </picture>
+          <figcaption>Słodkie pisklaki</figcaption>
+        </figure>
+
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/lis_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/lis_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/lis_1000.jpg" />
+            <img src="img/lis_500.jpg" alt="Zdjęcie 4 - lis" />
+          </picture>
+          <figcaption>Rudy lis w śniegu</figcaption>
+        </figure>
+
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/meduza_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/meduza_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/meduza_1000.jpg" />
+            <img src="img/meduza_500.jpg" alt="Zdjęcie 5 - meduza" />
+          </picture>
+          <figcaption>Meduza z głębi oceanu</figcaption>
+        </figure>
+
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/sarna_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/sarna_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/sarna_1000.jpg" />
+            <img src="img/sarna_500.jpg" alt="Zdjęcie 6 - sarna" />
+          </picture>
+          <figcaption>Sarny otoczone zielenią</figcaption>
+        </figure>
+
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/sowa_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/sowa_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/sowa_1000.jpg" />
+            <img src="img/sowa_500.jpg" alt="Zdjęcie 7 - sowa" />
+          </picture>
+          <figcaption>Samotna sowa</figcaption>
+        </figure>
+
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/wydry_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/wydry_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/wydry_1000.jpg" />
+            <img src="img/wydry_500.jpg" alt="Zdjęcie 8 - wydry" />
+          </picture>
+          <figcaption>polujące wydry</figcaption>
+        </figure>
+
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/zebry_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/zebry_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/zebry_1000.jpg" />
+            <img src="img/zebry_500.jpg" alt="Zdjęcie 9 - zebry" />
+          </picture>
+          <figcaption>Stado zebr</figcaption>
+        </figure>
+
+        <figure class="item">
+          <picture>
+            <source media="(min-width:1600px)" srcset="img/zolw_1000.jpg" />
+            <source media="(min-width:1200px)" srcset="img/zolw_500.jpg" />
+            <source media="(min-width:800px)" srcset="img/zolw_1000.jpg" />
+            <img src="img/zolw_500.jpg" alt="Zdjęcie 10 - zolw" />
+          </picture>
+          <figcaption>Żółw centkowany</figcaption>
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>
