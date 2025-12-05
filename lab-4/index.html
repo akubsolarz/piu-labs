@@ -2,11 +2,54 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <title>Lab 4</title>
+    <title>Tablica Kanban</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Lab 4</h1>
-    <a href="..">Powrót</a>
+    <main class="wrapper">
+      <h1>Tablica Kanban</h1>
+      <div id="tablica" class="tablica">
+        <section class="column" data-column="todo">
+          <header class="column-header">
+            <h2>Do zrobienia</h2>
+            <span class="column-counter" data-counter="todo">0</span>
+          </header>
+          <div class="column-controls">
+            <button class="btn add-card">Dodaj kartę</button>
+            <button class="btn color-column">Koloruj kolumnę</button>
+            <button class="btn sort-column">Sortuj</button>
+          </div>
+          <div class="cards"></div>
+        </section>
+
+        <section class="column" data-column="inprogress">
+          <header class="column-header">
+            <h2>W trakcie</h2>
+            <span class="column-counter" data-counter="inprogress">0</span>
+          </header>
+          <div class="column-controls">
+            <button class="btn add-card">Dodaj kartę</button>
+            <button class="btn color-column">Koloruj kolumnę</button>
+            <button class="btn sort-column">Sortuj</button>
+          </div>
+          <div class="cards"></div>
+        </section>
+
+        <section class="column" data-column="done">
+          <header class="column-header">
+            <h2>Zrobione</h2>
+            <span class="column-counter" data-counter="done">0</span>
+          </header>
+          <div class="column-controls">
+            <button class="btn add-card">Dodaj kartę</button>
+            <button class="btn color-column">Koloruj kolumnę</button>
+            <button class="btn sort-column">Sortuj</button>
+          </div>
+          <div class="cards"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
   </body>
 </html>
