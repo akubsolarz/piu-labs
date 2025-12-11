@@ -1,0 +1,77 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 30px;
+    text-align: center;
+    background: #fdfdfd;
+    color: #444;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #615f5f;
+}
+
+.controls button {
+    margin: 6px;
+    padding: 12px 20px;
+    min-width: 160px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #c3c7e7;
+    color: #42445a;
+    box-shadow: 0 2px 5px rgba(14, 14, 26, 0.25);
+    transition: background 0.25s, transform 0.15s;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: #656ead;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.controls button:active {
+    transform: translateY(0px);
+}
+
+.board {
+    margin: 25px auto;
+    max-width: 800px;
+    min-height: 200px;
+    border: 3px dashed #7f8dd8;
+    background: #bec3e4;
+    padding: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    border-radius: 14px;
+}
+
+.count{
+    color: #656ead;
+    font-size: large;
+}
+
+.shape {
+    width: 70px;
+    height: 70px;
+    border: 3px solid rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 3px 7px rgba(150, 150, 200, 0.35);
+}
+
+.shape:hover {
+    transform: scale(1.15);
+    box-shadow: 0 5px 10px rgba(120, 120, 160, 0.45);
+}
+
+
+.square {
+    border-radius: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+}
